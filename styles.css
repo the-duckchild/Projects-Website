@@ -1,39 +1,42 @@
+#contdiv{
+    display: flex;
+    justify-content: center;
+}
+
 .nav{
     /* background-color: #333; */
     background: linear-gradient(to right, #086375,#78c3fb);
     font-family: monospace;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 50px;
     display: flex;
     justify-content: space-evenly;
-    width: 95%;
+    width: 60%;
     opacity: 0.7;
-    margin: auto;
+    margin: 20px;
+  
    
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
+    margin: 5px
 }
 
-li {
-  float: left;
-}
+
     
     li:hover {
-        background-color: rgba(255,1,251,0.4);
+        background-color: rgba(244,116,59,0.6);
         border-radius: 50px;
     }
     
    /*Change the link color on hover */
-    li:hover a {
-        
-        color: #000000;
+    li:hover a {  
+        color: #086375;
     }
 
     /* Style the links inside the list items */
