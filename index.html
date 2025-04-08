@@ -6,19 +6,25 @@
         <title>Simon Duck Personal Projects</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
     <body>
-        <nav class="nav text-[#ffffff]">
-            <ul class="nav-container">
-                <li class="text-[#000000] font-extrabold"><a href="index.html">Home</a></li>
-                <li class=><a href="projects.html">Electronics and hacking</a></li>
-                <li class=><a href="robotriddims.html">Robot Riddims</a></li>
-                <li class=><a href="projects.html">Music for Art</a></li>
-                <li class=><a href="projects.html">Bam Bam Sound</a></li>    
-                <li class=><a href="contact.html">Contact</a></li>
+        <div class="flex text-justify md:justify-center sticky top-0" >
+            <nav class="flex justify-center font-mono bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] bg-opacity-75 drop-shadow-xl/50 text-[calc(1vh+1vw)] m-[20px] w-[30%] md:w-[80%] rounded-[50px]">
+            <ul class="flex flex-col md:flex-row justify-evenly p-0 overflow-hidden list-none m-[15px]">
+                <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1em]"><a href="index.html" class = "block p=[16px] text-center hover:text-[#086375]">Home</a></li>
+                <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1em]"><a href="projects.html" class = "block p=[1em] text-center hover:text-[#086375]" >Electronics and hacking</a></li>
+                <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1em] text-[#FFFF00]"><button onclick="dropDown()" class="block p=[16px] text-center hover:text-[#086375]">Robot Riddims</button></li>
+                <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1em]"><a href="projects.html" class = "block p=[1em] text-center hover:text-[#086375]">Music for Art</a></li>
+                <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1em]"><a href="projects.html" class = "block p=[1em] text-center hover:text-[#086375]">Bam Bam Sound</a></li>    
+                <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1em]"><a href="contact.html" class = "block p=[1em] text-center hover:text-[#086375]">Contact</a></li>
             </ul>
         </nav>
+    </div>
     </body>
+    <div class="flex justify-center sticky bottom-0">
+        <footer class=" flex justify-center font-mono bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] bg-opacity-75 drop-shadow-xl/50 text-lg m-[20px] w-[80%] rounded-[50px]">    
+            Social Links go here
+        </footer>
+    </div>
 </html>
