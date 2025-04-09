@@ -8,22 +8,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
-    <body class ="bg-[black-paper.png] bg-repeat">
-        <div class="flex text-justify md:justify-center sticky top-0" >
-     <nav class="flex justify-center font-mono bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] bg-opacity-75 drop-shadow-xl/50 text-[calc(1vh+1vw)] lg:text-base m-[20px] w-[30%] md:w-[80%] rounded-[50px]">
-     <ul class="flex flex-col md:flex-row justify-evenly p-0 overflow-hidden list-none m-[5px]">
-         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw] text-[#FFFF00]"><a href="index.html" class = "block p=[0.1em] pt-px text-center hover:text-[#086375]">Home</a></li>
-         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw]"><a href="projects.html" class = "block p=[0.1em] pt-px text-center hover:text-[#086375]" >Electronics</a></li>
-         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw]"><a href="robotriddims.html" class = "block p=[0.1em] pt-px text-center hover:text-[#086375]">Robot Riddims</a></li>
-         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw]"><a href="projects.html" class = "block p=[0.1em] pt-px text-center hover:text-[#086375]">Music for Art</a></li>
-         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw]"><a href="projects.html" class = "block p=[0.1em] pt-px text-center hover:text-[#086375]">Bam Bam Sound</a></li>    
-         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw]"><a href="contact.html" class = "block p=[0.1em] pt-px text-center hover:text-[#086375]">Contact</a></li>
+    <body class ="bg-[#e3dac9] bg-[url(clean-textile.png)]">
+        <div class="flex text-justify md:justify-center sticky top-0">
+     <nav class="fixed flex justify-center font-mono bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] bg-opacity-75 drop-shadow-xl/50 text-[calc(1vh+1vw*0.75)] lg:text-base m-[20px] w-[20%] md:w-[80%] rounded-[25px] md:rounded-[50px]">
+     <ul class="flex gap-y-[calc(6vh)] flex-col md:flex-row justify-evenly p-0 overflow-hidden list-none mt-[8vh] mb-[8vh] md:m-[5px]">
+         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw] text-[#FFFF00]"><a href="index.html" class = "block md:p=[0.1em] pt-px text-center hover:text-[#086375]">Home</a></li>
+         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw]"><a href="projects.html" class = "block md:p=[0.1em] pt-px text-center hover:text-[#086375]" >Electronics</a></li>
+         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw]"><a href="robotriddims.html" class = "block md:p=[0.1em] pt-px text-center hover:text-[#086375] ">Robot Riddims</a></li>
+         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw]"><a href="musicforart.html" class = "block md:p=[0.1em] pt-px text-center hover:text-[#086375]">Music for Art</a></li>
+         <li class ="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[1vw]"><a href="projects.html" class = "block md:p=[0.1em] pt-px text-center hover:text-[#086375]">Bam Bam Sound</a></li>    
      </ul>
  </nav>
  </div>
 </body>
-    <div class="flex justify-center sticky bottom-0">
-        <footer class=" flex justify-center font-mono bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] bg-opacity-75 drop-shadow-xl/50 text-lg m-[20px] w-[60%] rounded-[50px]">    
-            Social Links go here
-        </footer>
+<div class="flex justify-center items-center"> 
+    <footer class="bottom-0 flex fixed justify-center font-mono bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#000000] bg-opacity-75 drop-shadow-xl/50 text-[calc(1vh+1vw*0.5)] lg:text-base m-[20px] w-[80%] rounded-[50px]">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <ul class="flex flex-wrap items-center mt-3 lg:text-base font-medium text-[#000000] dark:text-white sm:mt-0">
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+                <div class="flex w-[7.5vw] h-[7.5vh]">
+                    <svg style="w-full h-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+                        <a href="https://bsky.app/profile/robotriddims.bsky.social"> 
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(27.094163424124503 27.094163424124474) scale(2.23 2.23)">
+                            <path d="M 45 90 L 45 90 C 20.147 90 0 69.853 0 45 v 0 C 0 20.147 20.147 0 45 0 h 0 c 24.853 0 45 20.147 45 45 v 0 C 90 69.853 69.853 90 45 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                            <path d="M 29.977 25.793 C 36.058 30.358 42.599 39.615 45 44.582 c 2.402 -4.967 8.942 -14.224 15.023 -18.789 c 4.388 -3.294 11.497 -5.843 11.497 2.267 c 0 1.62 -0.929 13.607 -1.473 15.553 c -1.893 6.766 -8.792 8.491 -14.929 7.447 c 10.727 1.826 13.456 7.873 7.562 13.92 c -11.192 11.485 -16.087 -2.882 -17.341 -6.563 c -0.23 -0.675 -0.337 -0.991 -0.339 -0.722 c -0.002 -0.268 -0.109 0.047 -0.339 0.722 c -1.254 3.681 -6.148 18.048 -17.341 6.563 c -5.893 -6.047 -3.165 -12.095 7.562 -13.92 c -6.137 1.044 -13.036 -0.681 -14.929 -7.447 c -0.545 -1.946 -1.473 -13.933 -1.473 -15.553 C 18.48 19.95 25.589 22.499 29.977 25.793 L 29.977 25.793 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                        </g>
+                    </a>
+                        </svg>
+                    </div>
+            
+            </li>
+        </ul>
+        <span class="flex text-[calc(1vh+1vw*0.75)] lg:text-base text-[#000000] sm:text-center dark:text-white">© 2025 Simon Duck.
+        </span>
+        </div>
+    </footer>
+</div>
 </html>
