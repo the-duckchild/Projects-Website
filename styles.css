@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: linear-gradient(45deg, #086375);
+  --background: #e3dac9;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  --hamburger-margin: 1.25rem;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background: linear-gradient(45deg, #086375, #78c3fb);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing);
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: var(--bar-height) calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: var(--bar-height) calc(var(--bar-height) / 2);
+}
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  gap: var(--hamburger-gap);
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  left: calc(50% - var(--bar-width) / 2 - var(--hamburger-margin));
+  margin: var(--hamburger-margin);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  pointer-events: none;
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+  max-height: 50rem;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0 0;
+}
+
+.sidebar {
+  transition: translate var(--animation-timing);
+  translate: 0 -100%;
+  padding-top: calc(var(--hamburger-height) + 1em + var(--hamburger-margin));
+  background-color: rgba(244, 116, 59, 0.8);
+  position: absolute;
+  width: 100%;
+  padding-bottom: calc(var(--hamburger-height) + 1em + var(--hamburger-margin));
+  color: #ffffff;
+}
