@@ -100,7 +100,7 @@ textarea {
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
   background-color: #e3dac9; /* Background color */
-  font-color: #ffffff; /* Text color */
+  color: #086375; /* Text color */
 }
 
 .container {
