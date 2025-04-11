@@ -12,25 +12,27 @@
   <body
     class="bg-[#e3dac9] bg-[url(clean-textile.png)] flex flex-col min-h-[100vh]"
   >
-    <!--- NAVIGATION BAR-->
+    <!--- NAVIGATION BAR FOR LANDSCAPE OR LARGER SCREENS-->
 
-    <header class="hidden landscape:flex justify-center text-center sticky top-0 ">
+    <header
+      class="hidden landscape:flex justify-center text-center sticky top-0"
+    >
       <nav
-        class="fixed flex  font-mono justify-center align-center bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] drop-shadow-xl/50 text-[calc(1vh+1vw*0.65)] md:text-[calc(1vh+1vw*0.8)] xl:text-base m-[40px] w-90% md:w-[60%] rounded-[25px] md:rounded-[50px] overflow-hidden"
+        class="fixed flex font-mono justify-center align-center bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] drop-shadow-xl/50 text-[calc(1vh+1vw*0.65)] md:text-[calc(1vh+1vw*0.8)] xl:text-lg m-[5vh] w-90% md:w-[60%] rounded-[25px] md:rounded-[50px] overflow-hidden"
       >
         <ul
           class="flex flex-col flex-row text-center p-0 overflow-hidden list-none m-[8px]"
         >
-          <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw] text-center text-[#FFFF00]">
-            <a
-              href="index.html"
-              class="block p=[0.1em] hover:text-[#086375]"
+          <li
+            class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw] text-center"
+          >
+            <a href="index.html" class="block p=[0.1em] hover:text-[#086375]"
               >Home</a
             >
           </li>
           <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw]">
             <a
-              href="projects.html"
+              href="electronics.html"
               class="block p=[0.1em] hover:text-[#086375]"
               >Electronics</a
             >
@@ -38,30 +40,28 @@
           <li
             class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw] "
           >
-            <a
-              href="soundart.html"
-              class="block p=[0.1em] hover:text-[#086375]"
+            <a href="soundart.html" class="block p=[0.1em] hover:text-[#086375]"
               >Sound Art</a
             >
           </li>
-          <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw] ">
+          <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw]">
             <a
               href="robotriddims.html"
-              class="block p=[0.1em]  hover:text-[#086375]"
+              class="block p=[0.1em] hover:text-[#086375]"
               >Robot Riddims</a
             >
           </li>
-          
+
           <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw]">
             <a
-              href="projects.html"
-              class="block p=[0.1em] text-center hover:text-[#086375]"
+              href="bambamsound.html"
+              class="block p=[0.1em] text-center hover:text-[#086375] text-[#FFFF00]"
               >Bam Bam Sound</a
             >
           </li>
           <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw]">
             <a
-              href="projects.html"
+              href="contactform.html"
               class="block p=[0.1em] text-center hover:text-[#086375]"
               >Contact</a
             >
@@ -69,6 +69,10 @@
         </ul>
       </nav>
     </header>
+
+    <!--Navigation for portrait screens in the form of a hamburger drop down menu. Simple animation from CSS styles-->
+
+
     <label class="hamburger-menu hidden portrait:flex portrait:flex-col items-center drop-shadow-xl/25">
       <input type="checkbox">
     </label>
@@ -89,9 +93,42 @@
     <!--    END OF NAV BAR START OF MAIN CONTENT-->
 
     <main
-      class="grid gap-[2vh] grid-cols-2 portrait:grid-cols-1 pl-[5%] pr-[5%] landscape:pl-[20%] landscape:pr-[20%] mt-[calc((15vh+15vw)*0.4)] text-center  place-items-center grow"
+      class="mt-[calc((15vh+15vw)*0.4)]  grow"
     >
-      
+    <section
+        class="grid gap-[2vh] grid-cols-2 grid-rows-1 portrait:grid-cols-1 pl-[5%] pr-[5%] landscape:pl-[20%] landscape:pr-[20%] text-center place-items-center m-10"
+      >
+    <div class="col-span-[4fr] potrait:col-span-1 landscape:aspect-[4/3]">
+      <img
+        src="https://i.ibb.co/0jdx06FB/466874462-10159889086096580-2047917329864792843-n.jpg"
+        alt="Image of DJs Bam Bam Sound"
+        border="0"
+        class="object-cover rounded-[25px] align-self"
+      />
+    </div>
+
+    <div
+      class="col-span-[6fr] portrait:col-span-1 p-[4] landscape:aspect-[4/3]"
+    >
+      <section>
+        <h1 class="text-[calc(2vh+2vw*0.65)] md:text-[calc(2vh+2vw*0.8)] xl:text-lg font-bold font-mono text-[#086375] m-2">
+          Bam Bam Sound
+        </h1>
+
+        <p
+          class="text-[calc(1vh+1vw*0.2)] md:text-[calc(1vh+1vw*0.8)] xl:text-base font-mono text-[#086375] m-2"
+        >
+         As one half of DJ duo <a href="https://www.mixcloud.com/Bam_Bam_Sound/" class="hover:text-[#FE5F55] font-semibold">Bam Bam Sound</a> I have played at various clubs, festivals and events in the UK, Europe and Asia.
+         We were resident DJs at London's Big Chill bar for more than a decade. 
+        </p>
+      </section>
+    </div>
+
+    <div class="col-span-2">
+      <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fawamuradio%2Fafrican-dancehall-from-uganda-and-beyond-from-duck-of-bam-bam-sound%2F" frameborder="0" ></iframe>
+    </div>
+
+  
     </main>
   </body>
 
@@ -99,14 +136,14 @@
 
   <div class="flex justify-center items-center m-4">
     <footer
-      class="bottom-0 flex justify-center p-0 font-mono bg-[#e3dac9] text-[#fe5f55] text-sm portait: w-[100%] landscape:w-[30%]"
+      class="bottom-0 flex justify-center p-0 font-mono bg-[#e3dac9] text-[#fe5f55] text-sm portait: w-[100%] landscape:w-[40%]"
     >
 
     <!-- Bluesky Logo-->
       <div
         class="w-full mx-auto max-w-screen-xl p-2 flex items-center justify-between"
       >
-        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw]">
+        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
           <a href="https://bsky.app/profile/robotriddims.bsky.social">
             <img
               style="width: 100%; height: 100%"
@@ -118,7 +155,7 @@
 
         <!-- FACEBOOK LOGO-->
 
-        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw]">
+        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
           <a href="https://www.facebook.com/its.duck">
             <img
               style="width: 100%; height: 100%"
@@ -130,7 +167,7 @@
 
         <!--BANDCAMP LOGO-->
 
-        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw]">
+        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
           <a href="https://robotriddims.bandcamp.com/">
             <img
               style="width: 100%; height: 100%"
@@ -140,7 +177,7 @@
           </a>
         </div>
         <!--    Instagram logo -->
-        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw]">
+        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
           <a href="https://www.instagram.com/robotriddims/">
             <img
               style="width: 100%; height: 100%"
@@ -151,7 +188,7 @@
         </div>
 
         <!--    Spotify Logo   -->
-        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw]">
+        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
           <a
             href="https://open.spotify.com/artist/6jnqwrnUc0SLpT7wthJXmv?si=wTL_xnkBTAOs-rrVXYLg_A/&utm_source=copy-link"
           >
