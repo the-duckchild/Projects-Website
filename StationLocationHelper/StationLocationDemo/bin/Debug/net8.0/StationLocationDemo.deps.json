@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "StationLocationDemo/1.0.0": {
+        "dependencies": {
+          "StationLocationHelper": "1.0.0"
+        },
+        "runtime": {
+          "StationLocationDemo.dll": {}
+        }
+      },
+      "StationLocationHelper/1.0.0": {
+        "runtime": {
+          "StationLocationHelper.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StationLocationDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StationLocationHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
