@@ -1,0 +1,12 @@
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/bin/Debug/net8.0/StationLocationHelper.deps.json
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/bin/Debug/net8.0/StationLocationHelper.dll
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/bin/Debug/net8.0/StationLocationHelper.pdb
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/obj/Debug/net8.0/StationLocationHelper.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/obj/Debug/net8.0/StationLocationHelper.AssemblyInfoInputs.cache
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/obj/Debug/net8.0/StationLocationHelper.AssemblyInfo.cs
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/obj/Debug/net8.0/StationLocationHelper.csproj.CoreCompileInputs.cache
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/obj/Debug/net8.0/StationLocationHelper.sourcelink.json
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/obj/Debug/net8.0/StationLocationHelper.dll
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/obj/Debug/net8.0/refint/StationLocationHelper.dll
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/obj/Debug/net8.0/StationLocationHelper.pdb
+/home/runner/work/Projects-Website/Projects-Website/StationLocationHelper/StationLocationHelper/obj/Debug/net8.0/ref/StationLocationHelper.dll
