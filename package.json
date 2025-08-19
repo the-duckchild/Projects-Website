@@ -1,12 +1,13 @@
 {
   "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
     "dotenv": "^17.2.1",
-    "netlify-cli": "^23.1.4",
-    "netlify-lambda": "^2.0.16"
+    "netlify-cli": "^1.2.3",
+    "netlify-lambda": "^0.4.0",
+    "tailwindcss": "^4.1.12"
   },
-
   "scripts": {
-   "build": "npm run-script",
-   "dev": "netlify dev"
- }
+    "build": "npm run-script",
+    "dev": "netlify dev"
+  }
 }

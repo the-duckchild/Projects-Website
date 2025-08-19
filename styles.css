@@ -1,3 +1,4 @@
+@import "tailwindcss";
 *,
 *::after,
 *::before {
@@ -110,3 +111,4 @@ textarea {
   margin: auto;
   margin-top: 15vh;
 }
+

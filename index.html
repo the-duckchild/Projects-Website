@@ -4,24 +4,25 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Simon Duck Personal Projects</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link href="styles.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="footerManager.js"></script>
   </head>
   <body 
     class="bg-[#e3dac9] bg-[url(clean-textile.png)] flex flex-col min-h-[100vh]">
 
     <!--- NAVIGATION BAR FOR LANDSCAPE OR LARGER SCREENS-->
 
-    <header
-      class="hidden landscape:flex justify-center text-center sticky top-0"
-    >
+    <header class="hidden landscape:flex justify-center text-center sticky top-0">
+    
+    <section id ="nav-container" class="bg-[#e3dac9] w-90% md:w-[60%]">
       <nav
         class="absolute flex font-mono justify-center align-center bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] drop-shadow-xl/25 text-[calc(1vh+1vw*0.50)] lg:text-[calc(1vh+1vw*0.8)] xl:text-lg m-[5vh] w-90% md:w-[60%] rounded-[25px] md:rounded-[50px] overflow-hidden"
       >
         <ul
-          class="flex flex-col flex-row text-center p-0 overflow-hidden list-none m-[8px]"
+          class="flex flex-row text-center p-0 overflow-hidden list-none m-[8px]"
         >
           <li
             class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw] text-center"
@@ -68,8 +69,9 @@
           </li>
         </ul>
       </nav>
+    </section>
     </header>
-
+       
     <!--Navigation for portrait screens in the form of a hamburger drop down menu. Simple animation from CSS styles-->
 
 
@@ -89,7 +91,7 @@
 
       </aside>
 
-    
+ 
     <!--    END OF NAV BAR START OF MAIN CONTENT FOR EACH PAGE. MAIN HAS FLEX GROW TO KEEP FOOTER PINNED TO BOTTOM ON SMALLER PAGES-->
 
     <main
@@ -99,78 +101,11 @@
     <span class="wrapper type text-left drop-shadow-lg/25 text-[#086375] text-[calc(1vh+1vw*5)] md:text-[calc(1vh+1vw*8)]font-mono text-5xl m-18 portrait:m-5 font-mono w-[60%]" style="--n:53">
       <ul>Hello World!</ul> Welcome to my personal projects website..</span>
     </section>
+    
     </main>
+    <social-footer></social-footer>
   </body>
 
-  <!--  FOOTER STARTS HERE  -->
 
-  <div class="flex justify-center items-center m-4">
-    <footer
-      class="bottom-0 flex justify-center p-0 font-mono bg-[#e3dac9] text-[#fe5f55] text-sm portait: w-[100%] landscape:w-[40%]"
-    >
 
-    <!-- Bluesky Logo-->
-      <div
-        class="w-full mx-auto max-w-screen-xl p-2 flex items-center justify-between"
-      >
-        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
-          <a href="https://bsky.app/profile/robotriddims.bsky.social">
-            <img
-              style="width: 100%; height: 100%"
-              src="social\bluesky-blue-round-circle-logo-24461.svg"
-              alt="Bluesky Logo"
-            />
-          </a>
-        </div>
-
-        <!-- FACEBOOK LOGO-->
-
-        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
-          <a href="https://www.facebook.com/its.duck">
-            <img
-              style="width: 100%; height: 100%"
-              src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg"
-              alt="Facebook Logo"
-            />
-          </a>
-        </div>
-
-        <!--BANDCAMP LOGO-->
-
-        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
-          <a href="https://robotriddims.bandcamp.com/">
-            <img
-              style="width: 100%; height: 100%"
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandcamp-button-bc-circle-aqua.svg"
-              alt="Bandcamp Logo"
-            />
-          </a>
-        </div>
-        <!--    Instagram logo -->
-        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
-          <a href="https://www.instagram.com/robotriddims/">
-            <img
-              style="width: 100%; height: 100%"
-              src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
-              alt="Instagram Logo"
-            />
-          </a>
-        </div>
-
-        <!--    Spotify Logo   -->
-        <div class="flex w-[5vw] h-[5vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
-          <a
-            href="https://open.spotify.com/artist/6jnqwrnUc0SLpT7wthJXmv?si=wTL_xnkBTAOs-rrVXYLg_A/&utm_source=copy-link"
-          >
-            <img
-              style="width: 100%; height: 100%"
-              src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
-              alt="Spotify Logo"
-            />
-          </a>
-        </div>
-    </div>
-      </div>
-    </footer>
-  </div>
 </html>
