@@ -6,16 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Simon Duck Personal Projects</title>
   <link href="./src/output.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link href="styles/hamburger.css" rel="stylesheet">
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="footerManager.js"></script>
 </head>
 
 <body class="bg-[#e3dac9] bg-[url(clean-textile.png)] flex flex-col min-h-[100vh]">
-
   <!--- NAVIGATION BAR FOR LANDSCAPE OR LARGER SCREENS-->
-
     <header
       class="hidden landscape:flex justify-center text-center sticky top-0 z-51"
     >
@@ -32,7 +30,7 @@
               >Home</a
             >
           </li>
-          <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw]">
+          <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw] text-[#FFFF00]">
             <a
               href="electronics.html"
               class="block p=[0.1em] hover:text-[#086375]"
@@ -57,7 +55,7 @@
           <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw]">
             <a
               href="bambamsound.html"
-              class="block p=[0.1em] text-center hover:text-[#086375] text-[#FFFF00]"
+              class="block p=[0.1em] text-center hover:text-[#086375] "
               >Bam Bam Sound</a
             >
           </li>
@@ -80,8 +78,8 @@
     </label>
       <aside class="sidebar bg-[rgba(244,116,59,0.6)] landscape:hidden">
         <nav class="font-mono text-center font-size-[3em]">
-          <div class ="p=[0.5em] font-bold text-center m-5 text-[#FFFF00]"><a href="index.html">Home</a></div>
-          <div class ="p=[0.5em] font-bold text-center m-5"><a href="electronics.html">Electronics</a></div>
+          <div class ="p=[0.5em] font-bold text-center m-5 "><a href="index.html">Home</a></div>
+          <div class ="p=[0.5em] font-bold text-center m-5 text-[#FFFF00]"><a href="electronics.html">Electronics</a></div>
           <div class ="p=[0.5em] font-bold text-center m-5 "><a href="soundart.html">Sound Art</a></div>
           <div class ="p=[0.5em] font-bold text-center m-5"><a href="robotriddims.html">Robot Riddims</a></div>
           <div class ="p=[0.5em] font-bold text-center m-5"><a href="bambamsound.html">Bam Bam Sound</a></div>
@@ -90,8 +88,8 @@
 
 
       </aside>
-</div>
-<div class="top-0 min-w-6000 fixed h-[9vh] bg-[#e3dac9] z-50 "></div>
+
+<div class="hidden landscape:block top-0 min-w-6000 fixed h-[9vh] bg-[#e3dac9] z-50 "></div>
   <!--    END OF NAV BAR START OF MAIN CONTENT FOR EACH PAGE. MAIN HAS FLEX GROW TO KEEP FOOTER PINNED TO BOTTOM ON SMALLER PAGES-->
 
   <main class="grow mt-[calc((15vh+15vw)*0.4)] z-8">
@@ -104,7 +102,7 @@
 
       <div class="potrait:col-span-1  text-[#086375]">
         <img src="https://i.ibb.co/LFFnNTV/Zagare.jpg"
-          alt="Simon Duck delivering an electronics workshop at the Žagarė Fringe Festival" border="0"
+          alt="Simon Duck delivering an electronics workshop at the Žagarė Fringe Festival"
           class="object-cover rounded-[25px] align-self" />
       </div>
 
@@ -114,7 +112,7 @@
             Žagarė Fringe Festival, Lithuania
           </h1>
 
-          <p class="text-[calc(1vh+1vw*0.5)] xl:text-base font-mono text-[#086375] m-2">
+          <p class="text-[calc(1vh+1vw*0.5)] lg:text-[calc(1vh+1vw*0.8)] xl:text-base font-mono text-[#086375] m-2">
             I delivered a workshop explaining how to build a rudimentary
             synthesier with basic electronic components to a mixed age group
             of local particpants.
@@ -136,10 +134,10 @@
             Absurd Instruments Hackathon
           </h1>
 
-          <p class="text-[calc(1vh+1vw*0.5)] xl:text-base font-mono text-[#086375] m-2">
+          <p class="text-[calc(1vh+1vw*0.5)] lg:text-[calc(1vh+1vw*0.8)] xl:text-base font-mono text-[#086375] m-2">
             I was selected to take part in this weekend long <a
               href="https://blog.bela.io/absurd-instruments-hackathon/" target="_blank"
-              class="hover:text-[#FE5F55] font-semibold"">Hackathon</a> at Queen Mary's University, London.
+              class="hover:text-[#FE5F55] font-semibold">Hackathon</a> at Queen Mary's University, London.
               Participants were asked to take part in " Making absurd, surreal and silly musical propositions.
               Composing unconventional artefacts challenging current music technology. Subverting the ways we use
               musical tools to reveal unstated assumptions and explore alternatives." </p>
@@ -166,7 +164,7 @@
             Custom MIDI Controller
           </h1>
 
-          <p class="text-[calc(1vh+1vw*0.3)] xl:text-base font-mono text-[#086375] m-2">
+          <p class="text-[calc(1vh+1vw*0.5)] lg:text-[calc(1vh+1vw*0.8)] xl:text-base font-mono text-[#086375] m-2">
             I designed, prototyped, programmed and built this <a href="https://www.pjrc.com/teensy/" target="_blank"
               class="hover:text-[#FE5F55] font-semibold">Teensy</a> driven midi controller for use in my live
             performances. The code can be found <a href="https://github.com/the-duckchild/Robot-Riddims-Mixing-Desk"
@@ -187,7 +185,7 @@
             MB6582 SID Synth
           </h1>
 
-          <p class="text-[calc(1vh+1vw*0.5)] xl:text-base font-mono text-[#086375] m-2"> I took on the challenge of
+          <p class="text-[calc(1vh+1vw*0.5)] lg:text-[calc(1vh+1vw*0.8)] xl:text-base font-mono text-[#086375] m-2"> I took on the challenge of
             building an MB6582 SID synth. The MB6582 is a fully featured synthesizer, built on the MIDIbox platform and
             leveraging the power of eight SID chips - originally used in the Commodore 64. The project is open source
             and the documentation can be found <a href="https://www.midibox.org/dokuwiki/doku.php?id=mb6582:start"
@@ -222,7 +220,7 @@
             DIY Instrument Making & Hacking - Onassis Stegi, Athens
           </h1>
 
-          <p class="text-[calc(1vh+1vw*0.5)] xl:text-base font-mono text-[#086375] m-2">
+          <p class="text-[calc(1vh+1vw*0.5)] lg:text-[calc(1vh+1vw*0.8)] xl:text-base font-mono text-[#086375] m-2">
             I was selected to take part in and perform at this Hackathon event at Onassis Stegi Cultural centre in
             Athens, Greece. The event invited artists, musicians, sound engineers, designers and programmers in a
             three-day hackathon to collaboratively create new instruments and sounds, and explore new ways to make

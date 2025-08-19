@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Simon Duck Personal Projects</title>
     <link href="./src/output.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles/hamburger.css" rel="stylesheet">
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="netlifyForm.js"></script>
@@ -20,7 +20,7 @@
     <!--- NAVIGATION BAR FOR LANDSCAPE OR LARGER SCREENS-->
 
     <header
-      class="hidden landscape:flex justify-center text-center sticky top-0"
+      class="hidden landscape:flex justify-center text-center sticky top-0 z-51"
     >
       <nav
         class="absolute flex font-mono justify-center align-center bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] drop-shadow-xl/25 text-[calc(1vh+1vw*0.50)] lg:text-[calc(1vh+1vw*0.8)] xl:text-lg m-[5vh] w-90% md:w-[60%] rounded-[25px] md:rounded-[50px] overflow-hidden"
@@ -43,7 +43,7 @@
             >
           </li>
           <li
-            class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw]"
+            class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw] "
           >
             <a href="soundart.html" class="block p=[0.1em] hover:text-[#086375]"
               >Sound Art</a
@@ -60,11 +60,11 @@
           <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw]">
             <a
               href="bambamsound.html"
-              class="block p=[0.1em] text-center hover:text-[#086375]"
+              class="block p=[0.1em] text-center hover:text-[#086375] text-[#FFFF00]"
               >Bam Bam Sound</a
             >
           </li>
-          <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw] text-[#FFFF00]">
+          <li class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw]">
             <a
               href="contactform.html"
               class="block p=[0.1em] text-center hover:text-[#086375]"
@@ -73,6 +73,7 @@
           </li>
         </ul>
       </nav>
+    </header>
     
 
     <!--Navigation for portrait screens in the form of a hamburger drop down menu. Simple animation from CSS styles-->
@@ -93,6 +94,7 @@
         </nav>
       </aside>
 
+<div class="hidden landscape:block top-0 min-w-6000 fixed h-[9vh] bg-[#e3dac9] z-50"></div>
     
     <!--    END OF NAV BAR START OF MAIN CONTENT FOR EACH PAGE. MAIN HAS FLEX GROW TO KEEP FOOTER PINNED TO BOTTOM ON SMALLER PAGES-->
 
