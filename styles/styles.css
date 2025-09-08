@@ -5,13 +5,6 @@ html, body {
   overflow: auto;
   height: 100vh;}
 
-h1 {
-  font-size: calc(2vh+2vw*0.6);
-}
-
-P {
-  font-size: calc(1vh+1vw*0.4)
-}
 
 input[type="text"],
 select,
@@ -36,16 +29,13 @@ textarea {
 }
 
 .mySlides {
-  display: none;
-  width: 30vw;
-  height: 20vw;
+  width: 50vw;
+  height: 55vh;
   object-fit: cover;
   border-radius: 25px;
   border-color: #086375;
   border: solid;
   border-width: 5px;
-  margin-right: 6vw;
   box-sizing: border-box;
+
 }
-
-

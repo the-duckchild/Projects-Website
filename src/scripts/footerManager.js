@@ -2,14 +2,14 @@ class SocialFooter extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `<div class="flex justify-center items-center box-border">
     <footer id="footer-background"
-      class="bottom-0 flex justify-center p-0 font-mono text-[#fe5f55] text-sm portait: w-[100%] landscape:w-[40%] z-52 rounded-xl"
+      class="bottom-0 mb-2 flex justify-center p-0 font-mono text-[#fe5f55] text-sm portait: w-[100%] landscape:w-[40%] z-52 rounded-xl"
     >
 
     <!-- Bluesky Logo-->
       <div
         class="w-full mx-auto max-w-screen-xl p-2 pb-5 flex items-center justify-between"
       >
-        <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25 mr-10vw ml-20vw">
+        <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-md mr-10vw ml-20vw">
           <a href="https://bsky.app/profile/robotriddims.bsky.social">
             <img
               style="width: 100%; height: 100%"
@@ -21,7 +21,7 @@ class SocialFooter extends HTMLElement {
 
         <!-- FACEBOOK LOGO-->
 
-        <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25 mr-5vw ml-5vw">
+        <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-md mr-5vw ml-5vw">
           <a href="https://www.facebook.com/its.duck">
             <img
               style="width: 100%; height: 100%"
@@ -33,7 +33,7 @@ class SocialFooter extends HTMLElement {
 
         <!--BANDCAMP LOGO-->
 
-        <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25 mr-5vw ml-5vw">
+        <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-md mr-5vw ml-5vw">
           <a href="https://robotriddims.bandcamp.com/">
             <img
               style="width: 100%; height: 100%"
@@ -43,7 +43,7 @@ class SocialFooter extends HTMLElement {
           </a>
         </div>
         <!--    Instagram logo -->
-        <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
+        <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-md">
           <a href="https://www.instagram.com/robotriddims/">
             <img
               style="width: 100%; height: 100%"
@@ -54,7 +54,7 @@ class SocialFooter extends HTMLElement {
         </div>
 
         <!--    Spotify Logo   -->
-        <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25">
+        <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-md">
           <a
             href="https://open.spotify.com/artist/6jnqwrnUc0SLpT7wthJXmv?si=wTL_xnkBTAOs-rrVXYLg_A/&utm_source=copy-link"
           >

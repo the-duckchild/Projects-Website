@@ -25,6 +25,8 @@
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
     --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 0.12);
+    --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.15);
+    --drop-shadow-xl: 0 9px 7px rgb(0 0 0 / 0.1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -250,6 +252,9 @@
   .mt-\[calc\(\(15vh\+15vw\)\*0\.4\)\] {
     margin-top: calc((15vh + 15vw) * 0.4);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
@@ -274,11 +279,11 @@
   .h-\[9vh\] {
     height: 9vh;
   }
-  .h-\[20\%\] {
-    height: 20%;
+  .h-\[40\%\] {
+    height: 40%;
   }
-  .h-\[50\%\] {
-    height: 50%;
+  .h-\[60\%\] {
+    height: 60%;
   }
   .min-h-\[100vh\] {
     min-height: 100vh;
@@ -307,14 +312,8 @@
   .max-w-screen-xl {
     max-width: var(--breakpoint-xl);
   }
-  .min-w-6000 {
-    min-width: calc(var(--spacing) * 6000);
-  }
   .min-w-\[30px\] {
     min-width: 30px;
-  }
-  .shrink {
-    flex-shrink: 1;
   }
   .grow {
     flex-grow: 1;
@@ -404,6 +403,9 @@
     --tw-gradient-to: #78c3fb;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .object-contain {
+    object-fit: contain;
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -412,6 +414,9 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
   }
   .p-18 {
     padding: calc(var(--spacing) * 18);
@@ -427,6 +432,9 @@
   }
   .p-\[4\] {
     padding: 4;
+  }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
   }
   .pr-\[3\%\] {
     padding-right: 3%;
@@ -455,6 +463,9 @@
   .text-left {
     text-align: left;
   }
+  .align-middle {
+    vertical-align: middle;
+  }
   .font-mono {
     font-family: var(--font-mono);
   }
@@ -473,9 +484,6 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-  .text-\[calc\(1vh\+1vw\*0\.2\)\] {
-    font-size: calc(1vh + 1vw * 0.2);
   }
   .text-\[calc\(1vh\+1vw\*0\.5\)\] {
     font-size: calc(1vh + 1vw * 0.5);
@@ -518,12 +526,6 @@
   .drop-shadow-xl\/25 {
     --tw-drop-shadow-alpha: 25%;
     --tw-drop-shadow-size: drop-shadow(0 9px 7px var(--tw-drop-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 25%)));
-    --tw-drop-shadow: var(--tw-drop-shadow-size);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .drop-shadow-xl\/50 {
-    --tw-drop-shadow-alpha: 50%;
-    --tw-drop-shadow-size: drop-shadow(0 9px 7px var(--tw-drop-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 50%)));
     --tw-drop-shadow: var(--tw-drop-shadow-size);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
@@ -633,9 +635,14 @@
       display: flex;
     }
   }
-  .portrait\:h-\[80\%\] {
+  .portrait\:h-\[25\%\] {
     @media (orientation: portrait) {
-      height: 80%;
+      height: 25%;
+    }
+  }
+  .portrait\:h-\[75\%\] {
+    @media (orientation: portrait) {
+      height: 75%;
     }
   }
   .portrait\:w-\[80\%\] {
@@ -651,11 +658,6 @@
   .portrait\:flex-col {
     @media (orientation: portrait) {
       flex-direction: column;
-    }
-  }
-  .landscape\:block {
-    @media (orientation: landscape) {
-      display: block;
     }
   }
   .landscape\:flex {
@@ -693,12 +695,6 @@ html, body {
   overflow: auto;
   height: 100vh;
 }
-h1 {
-  font-size: calc(2vh+2vw*0.6);
-}
-P {
-  font-size: calc(1vh+1vw*0.4);
-}
 input[type="text"], select, textarea {
   width: 100%;
   padding: 12px;
@@ -718,15 +714,13 @@ input[type="text"], select, textarea {
   margin-top: 15vh;
 }
 .mySlides {
-  display: none;
-  width: 30vw;
-  height: 20vw;
+  width: 50vw;
+  height: 55vh;
   object-fit: cover;
   border-radius: 25px;
   border-color: #086375;
   border: solid;
   border-width: 5px;
-  margin-right: 6vw;
   box-sizing: border-box;
 }
 @layer theme, base, components, utilities;
