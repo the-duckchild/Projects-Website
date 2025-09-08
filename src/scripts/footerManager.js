@@ -1,13 +1,13 @@
 class SocialFooter extends HTMLElement {
     connectedCallback(){
-        this.innerHTML = `<div class="flex justify-center items-center m-4 ">
+        this.innerHTML = `<div class="flex justify-center items-center box-border">
     <footer id="footer-background"
       class="bottom-0 flex justify-center p-0 font-mono text-[#fe5f55] text-sm portait: w-[100%] landscape:w-[40%] z-52 rounded-xl"
     >
 
     <!-- Bluesky Logo-->
       <div
-        class="w-full mx-auto max-w-screen-xl p-2 flex items-center justify-between"
+        class="w-full mx-auto max-w-screen-xl p-2 pb-5 flex items-center justify-between"
       >
         <div class="flex w-[4vw] h-[4vh] min-w-[30px] justify-between p-[0.2vw] drop-shadow-xl/25 mr-10vw ml-20vw">
           <a href="https://bsky.app/profile/robotriddims.bsky.social">
@@ -66,6 +66,7 @@ class SocialFooter extends HTMLElement {
           </a>
         </div>
     </div>
+      </div>
       </div>
     </footer>
   </div>`

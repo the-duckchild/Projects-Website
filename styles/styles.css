@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
 
-body {
-  margin: 0;
-  overflow: scroll;
+html, body {
+  overflow: auto;
+  height: 100vh;}
+
+h1 {
+  font-size: calc(2vh+2vw*0.6);
+}
+
+P {
+  font-size: calc(1vh+1vw*0.4)
 }
 
 input[type="text"],
@@ -16,8 +23,7 @@ textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  background-color: #e3dac9; /* Background color */
+  background-color: #F2EDE1; /* Background color */
   color: #086375; /* Text color */
 }
 
@@ -39,4 +45,7 @@ textarea {
   border: solid;
   border-width: 5px;
   margin-right: 6vw;
+  box-sizing: border-box;
 }
+
+
