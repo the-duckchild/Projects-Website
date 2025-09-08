@@ -25,8 +25,6 @@
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
     --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 0.12);
-    --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.15);
-    --drop-shadow-xl: 0 9px 7px rgb(0 0 0 / 0.1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -505,9 +503,6 @@
   .text-\[\#086375\] {
     color: #086375;
   }
-  .text-\[\#FFFF00\] {
-    color: #FFFF00;
-  }
   .text-\[\#FFFFFF\] {
     color: #FFFFFF;
   }
@@ -722,6 +717,9 @@ input[type="text"], select, textarea {
   border: solid;
   border-width: 5px;
   box-sizing: border-box;
+}
+.textHighlight {
+  color: #FFFF00;
 }
 @layer theme, base, components, utilities;
 @layer theme;
