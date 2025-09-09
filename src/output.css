@@ -250,6 +250,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-\[10vh\] {
+    margin-top: 10vh;
+  }
   .mt-\[calc\(\(15vh\+15vw\)\*0\.4\)\] {
     margin-top: calc((15vh + 15vw) * 0.4);
   }
