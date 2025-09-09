@@ -247,6 +247,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-\[calc\(\(15vh\+15vw\)\*0\.4\)\] {
     margin-top: calc((15vh + 15vw) * 0.4);
   }
@@ -416,9 +419,6 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
-  .p-18 {
-    padding: calc(var(--spacing) * 18);
-  }
   .p-\[0\.2vw\] {
     padding: 0.2vw;
   }
@@ -458,18 +458,11 @@
   .text-center {
     text-align: center;
   }
-  .text-left {
-    text-align: left;
-  }
   .align-middle {
     vertical-align: middle;
   }
   .font-mono {
     font-family: var(--font-mono);
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -488,9 +481,6 @@
   }
   .text-\[calc\(1vh\+1vw\*0\.50\)\] {
     font-size: calc(1vh + 1vw * 0.50);
-  }
-  .text-\[calc\(1vh\+1vw\*5\)\] {
-    font-size: calc(1vh + 1vw * 5);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -511,12 +501,6 @@
   }
   .text-\[\#ffffff\] {
     color: #ffffff;
-  }
-  .drop-shadow-lg\/25 {
-    --tw-drop-shadow-alpha: 25%;
-    --tw-drop-shadow-size: drop-shadow(0 4px 4px var(--tw-drop-shadow-color, oklab(from rgb(0 0 0 / 0.15) l a b / 25%)));
-    --tw-drop-shadow: var(--tw-drop-shadow-size);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .drop-shadow-xl\/25 {
     --tw-drop-shadow-alpha: 25%;
@@ -655,6 +639,27 @@
       flex-direction: column;
     }
   }
+  .portrait\:p-5 {
+    @media (orientation: portrait) {
+      padding: calc(var(--spacing) * 5);
+    }
+  }
+  .portrait\:pt-10 {
+    @media (orientation: portrait) {
+      padding-top: calc(var(--spacing) * 10);
+    }
+  }
+  .portrait\:pt-\[10vh\] {
+    @media (orientation: portrait) {
+      padding-top: 10vh;
+    }
+  }
+  .portrait\:text-lg {
+    @media (orientation: portrait) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
   .landscape\:flex {
     @media (orientation: landscape) {
       display: flex;
@@ -683,6 +688,12 @@
   .landscape\:pl-\[20\%\] {
     @media (orientation: landscape) {
       padding-left: 20%;
+    }
+  }
+  .landscape\:text-5xl {
+    @media (orientation: landscape) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
 }
