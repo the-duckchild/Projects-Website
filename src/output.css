@@ -2,11 +2,12 @@
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
-  :root, :host {
+  :root,
+  :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
     --spacing: 0.25rem;
     --breakpoint-xl: 80rem;
     --text-sm: 0.875rem;
@@ -30,17 +31,31 @@
   }
 }
 @layer base {
-  *, ::after, ::before, ::backdrop, ::file-selector-button {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0 solid;
   }
-  html, :host {
+  html,
+  :host {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-family: var(
+      --default-font-family,
+      ui-sans-serif,
+      system-ui,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Noto Color Emoji"
+    );
     font-feature-settings: var(--default-font-feature-settings, normal);
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
@@ -54,7 +69,12 @@
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: inherit;
     font-weight: inherit;
   }
@@ -63,19 +83,37 @@
     -webkit-text-decoration: inherit;
     text-decoration: inherit;
   }
-  b, strong {
+  b,
+  strong {
     font-weight: bolder;
   }
-  code, kbd, samp, pre {
-    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: var(
+      --default-mono-font-family,
+      ui-monospace,
+      SFMono-Regular,
+      Menlo,
+      Monaco,
+      Consolas,
+      "Liberation Mono",
+      "Courier New",
+      monospace
+    );
     font-feature-settings: var(--default-mono-font-feature-settings, normal);
-    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-variation-settings: var(
+      --default-mono-font-variation-settings,
+      normal
+    );
     font-size: 1em;
   }
   small {
     font-size: 80%;
   }
-  sub, sup {
+  sub,
+  sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -101,18 +139,33 @@
   summary {
     display: list-item;
   }
-  ol, ul, menu {
+  ol,
+  ul,
+  menu {
     list-style: none;
   }
-  img, svg, video, canvas, audio, iframe, embed, object {
+  img,
+  svg,
+  video,
+  canvas,
+  audio,
+  iframe,
+  embed,
+  object {
     display: block;
     vertical-align: middle;
   }
-  img, video {
+  img,
+  video {
     max-width: 100%;
     height: auto;
   }
-  button, input, select, optgroup, textarea, ::file-selector-button {
+  button,
+  input,
+  select,
+  optgroup,
+  textarea,
+  ::file-selector-button {
     font: inherit;
     font-feature-settings: inherit;
     font-variation-settings: inherit;
@@ -134,7 +187,8 @@
   ::placeholder {
     opacity: 1;
   }
-  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+  @supports (not (-webkit-appearance: -apple-pay-button)) or
+    (contain-intrinsic-size: 1px) {
     ::placeholder {
       color: currentcolor;
       @supports (color: color-mix(in lab, red, red)) {
@@ -158,7 +212,15 @@
   ::-webkit-datetime-edit-fields-wrapper {
     padding: 0;
   }
-  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+  ::-webkit-datetime-edit,
+  ::-webkit-datetime-edit-year-field,
+  ::-webkit-datetime-edit-month-field,
+  ::-webkit-datetime-edit-day-field,
+  ::-webkit-datetime-edit-hour-field,
+  ::-webkit-datetime-edit-minute-field,
+  ::-webkit-datetime-edit-second-field,
+  ::-webkit-datetime-edit-millisecond-field,
+  ::-webkit-datetime-edit-meridiem-field {
     padding-block: 0;
   }
   ::-webkit-calendar-picker-indicator {
@@ -167,10 +229,13 @@
   :-moz-ui-invalid {
     box-shadow: none;
   }
-  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+  button,
+  input:where([type="button"], [type="reset"], [type="submit"]),
+  ::file-selector-button {
     appearance: button;
   }
-  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+  ::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
     height: auto;
   }
   [hidden]:where(:not([hidden="until-found"])) {
@@ -326,7 +391,8 @@
     flex-grow: 1;
   }
   .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z)
+      var(--tw-skew-x) var(--tw-skew-y);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -393,10 +459,10 @@
     border-width: 1px;
   }
   .bg-\[\#F2EDE1\] {
-    background-color: #F2EDE1;
+    background-color: #f2ede1;
   }
   .bg-\[rgba\(244\,116\,59\,0\.6\)\] {
-    background-color: rgba(244,116,59,0.6);
+    background-color: rgba(244, 116, 59, 0.6);
   }
   .bg-linear-to-r {
     --tw-gradient-position: to right;
@@ -407,11 +473,21 @@
   }
   .from-\[\#086375\] {
     --tw-gradient-from: #086375;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    --tw-gradient-stops: var(
+      --tw-gradient-via-stops,
+      var(--tw-gradient-position),
+      var(--tw-gradient-from) var(--tw-gradient-from-position),
+      var(--tw-gradient-to) var(--tw-gradient-to-position)
+    );
   }
   .to-\[\#78c3fb\] {
     --tw-gradient-to: #78c3fb;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    --tw-gradient-stops: var(
+      --tw-gradient-via-stops,
+      var(--tw-gradient-position),
+      var(--tw-gradient-from) var(--tw-gradient-from-position),
+      var(--tw-gradient-to) var(--tw-gradient-to-position)
+    );
   }
   .object-contain {
     object-fit: contain;
@@ -489,7 +565,7 @@
     font-size: calc(1vh + 1vw * 0.5);
   }
   .text-\[calc\(1vh\+1vw\*0\.50\)\] {
-    font-size: calc(1vh + 1vw * 0.50);
+    font-size: calc(1vh + 1vw * 0.5);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -503,7 +579,7 @@
     color: #086375;
   }
   .text-\[\#FFFFFF\] {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .text-\[\#fe5f55\] {
     color: #fe5f55;
@@ -513,19 +589,28 @@
   }
   .drop-shadow-xl\/25 {
     --tw-drop-shadow-alpha: 25%;
-    --tw-drop-shadow-size: drop-shadow(0 9px 7px var(--tw-drop-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 25%)));
+    --tw-drop-shadow-size: drop-shadow(
+      0 9px 7px
+        var(--tw-drop-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 25%))
+    );
     --tw-drop-shadow: var(--tw-drop-shadow-size);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+      var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+      var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
   .drop-shadow-md {
-    --tw-drop-shadow-size: drop-shadow(0 3px 3px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.12)));
+    --tw-drop-shadow-size: drop-shadow(
+      0 3px 3px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.12))
+    );
     --tw-drop-shadow: drop-shadow(var(--drop-shadow-md));
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+      var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+      var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
   .hover\:bg-\[rgba\(244\,116\,59\,0\.6\)\] {
     &:hover {
       @media (hover: hover) {
-        background-color: rgba(244,116,59,0.6);
+        background-color: rgba(244, 116, 59, 0.6);
       }
     }
   }
@@ -547,14 +632,14 @@
   .hover\:text-\[\#FE5F55\] {
     &:hover {
       @media (hover: hover) {
-        color: #FE5F55;
+        color: #fe5f55;
       }
     }
   }
   .hover\:text-\[\#FFFF00\] {
     &:hover {
       @media (hover: hover) {
-        color: #FFFF00;
+        color: #ffff00;
       }
     }
   }
@@ -701,12 +786,15 @@
     }
   }
 }
-html, body {
+html,
+body {
   overflow: auto;
   height: 100vh;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-input[type="text"], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -714,7 +802,7 @@ input[type="text"], select, textarea {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  background-color: #F2EDE1;
+  background-color: #f2ede1;
   color: #086375;
 }
 .container {
@@ -735,22 +823,36 @@ input[type="text"], select, textarea {
   box-sizing: border-box;
 }
 .textHighlight {
-  color: #FFFF00;
+  color: #ffff00;
 }
 @layer theme, base, components, utilities;
 @layer theme;
 @layer base {
-  *, ::after, ::before, ::backdrop, ::file-selector-button {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0 solid;
   }
-  html, :host {
+  html,
+  :host {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-family: var(
+      --default-font-family,
+      ui-sans-serif,
+      system-ui,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Noto Color Emoji"
+    );
     font-feature-settings: var(--default-font-feature-settings, normal);
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
@@ -764,7 +866,12 @@ input[type="text"], select, textarea {
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: inherit;
     font-weight: inherit;
   }
@@ -773,19 +880,37 @@ input[type="text"], select, textarea {
     -webkit-text-decoration: inherit;
     text-decoration: inherit;
   }
-  b, strong {
+  b,
+  strong {
     font-weight: bolder;
   }
-  code, kbd, samp, pre {
-    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: var(
+      --default-mono-font-family,
+      ui-monospace,
+      SFMono-Regular,
+      Menlo,
+      Monaco,
+      Consolas,
+      "Liberation Mono",
+      "Courier New",
+      monospace
+    );
     font-feature-settings: var(--default-mono-font-feature-settings, normal);
-    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-variation-settings: var(
+      --default-mono-font-variation-settings,
+      normal
+    );
     font-size: 1em;
   }
   small {
     font-size: 80%;
   }
-  sub, sup {
+  sub,
+  sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -811,18 +936,33 @@ input[type="text"], select, textarea {
   summary {
     display: list-item;
   }
-  ol, ul, menu {
+  ol,
+  ul,
+  menu {
     list-style: none;
   }
-  img, svg, video, canvas, audio, iframe, embed, object {
+  img,
+  svg,
+  video,
+  canvas,
+  audio,
+  iframe,
+  embed,
+  object {
     display: block;
     vertical-align: middle;
   }
-  img, video {
+  img,
+  video {
     max-width: 100%;
     height: auto;
   }
-  button, input, select, optgroup, textarea, ::file-selector-button {
+  button,
+  input,
+  select,
+  optgroup,
+  textarea,
+  ::file-selector-button {
     font: inherit;
     font-feature-settings: inherit;
     font-variation-settings: inherit;
@@ -844,7 +984,8 @@ input[type="text"], select, textarea {
   ::placeholder {
     opacity: 1;
   }
-  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+  @supports (not (-webkit-appearance: -apple-pay-button)) or
+    (contain-intrinsic-size: 1px) {
     ::placeholder {
       color: currentcolor;
       @supports (color: color-mix(in lab, red, red)) {
@@ -868,7 +1009,15 @@ input[type="text"], select, textarea {
   ::-webkit-datetime-edit-fields-wrapper {
     padding: 0;
   }
-  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+  ::-webkit-datetime-edit,
+  ::-webkit-datetime-edit-year-field,
+  ::-webkit-datetime-edit-month-field,
+  ::-webkit-datetime-edit-day-field,
+  ::-webkit-datetime-edit-hour-field,
+  ::-webkit-datetime-edit-minute-field,
+  ::-webkit-datetime-edit-second-field,
+  ::-webkit-datetime-edit-millisecond-field,
+  ::-webkit-datetime-edit-meridiem-field {
     padding-block: 0;
   }
   ::-webkit-calendar-picker-indicator {
@@ -877,10 +1026,13 @@ input[type="text"], select, textarea {
   :-moz-ui-invalid {
     box-shadow: none;
   }
-  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+  button,
+  input:where([type="button"], [type="reset"], [type="submit"]),
+  ::file-selector-button {
     appearance: button;
   }
-  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+  ::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
     height: auto;
   }
   [hidden]:where(:not([hidden="until-found"])) {
@@ -1013,8 +1165,12 @@ input[type="text"], select, textarea {
   inherits: false;
 }
 @layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or
+    ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
+    *,
+    ::before,
+    ::after,
+    ::backdrop {
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;

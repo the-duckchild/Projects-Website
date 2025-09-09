@@ -1,6 +1,6 @@
 class Navbar extends HTMLElement {
-    connectedCallback(){
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <script>navbarContextHighlight.js</script>
         <body>
             <header
@@ -81,9 +81,8 @@ class Navbar extends HTMLElement {
 
       </aside>
 
-<div class="block top-0 w-[100%] fixed h-[9vh] bg-[#F2EDE1] z-50 "></div>`
-    }
-};
+<div class="block top-0 w-[100%] fixed h-[9vh] bg-[#F2EDE1] z-50 "></div>`;
+  }
+}
 
-customElements.define('nav-bar',Navbar);
-
+customElements.define("nav-bar", Navbar);

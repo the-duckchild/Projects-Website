@@ -1,11 +1,10 @@
 @import "tailwindcss";
 
-
-
-html, body {
+html,
+body {
   overflow: auto;
   height: 100vh;
-  color: #FFFFFF
+  color: #ffffff;
 }
 
 input[type="text"],
@@ -18,7 +17,7 @@ textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  background-color: #F2EDE1; /* Background color */
+  background-color: #f2ede1; /* Background color */
   color: #086375; /* Text color */
 }
 
@@ -39,10 +38,8 @@ textarea {
   border: solid;
   border-width: 5px;
   box-sizing: border-box;
-
 }
 
-.textHighlight{
-  color: #FFFF00
+.textHighlight {
+  color: #ffff00;
 }
-
