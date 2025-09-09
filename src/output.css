@@ -250,6 +250,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-\[10vh\] {
+    margin-top: 10vh;
+  }
   .mt-\[calc\(\(15vh\+15vw\)\*0\.4\)\] {
     margin-top: calc((15vh + 15vw) * 0.4);
   }
@@ -280,11 +283,11 @@
   .h-\[9vh\] {
     height: 9vh;
   }
-  .h-\[40\%\] {
-    height: 40%;
+  .h-\[30\%\] {
+    height: 30%;
   }
-  .h-\[60\%\] {
-    height: 60%;
+  .h-\[75\%\] {
+    height: 75%;
   }
   .min-h-\[100vh\] {
     min-height: 100vh;
@@ -292,11 +295,11 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-\[1\] {
+    width: 1;
+  }
   .w-\[4vw\] {
     width: 4vw;
-  }
-  .w-\[8rem\] {
-    width: 8rem;
   }
   .w-\[40\%\] {
     width: 40%;
@@ -315,6 +318,9 @@
   }
   .min-w-\[30px\] {
     min-width: 30px;
+  }
+  .shrink {
+    flex-shrink: 1;
   }
   .grow {
     flex-grow: 1;
@@ -345,6 +351,9 @@
   }
   .flex-row {
     flex-direction: row;
+  }
+  .flex-nowrap {
+    flex-wrap: nowrap;
   }
   .place-content-center {
     place-content: center;
@@ -422,11 +431,11 @@
   .p-\[0\.2vw\] {
     padding: 0.2vw;
   }
-  .p-\[0\.5rem\] {
-    padding: 0.5rem;
-  }
   .p-\[0\.5vw\] {
     padding: 0.5vw;
+  }
+  .p-\[1\%\] {
+    padding: 1%;
   }
   .p-\[4\] {
     padding: 4;
@@ -619,11 +628,6 @@
       height: 25%;
     }
   }
-  .portrait\:h-\[75\%\] {
-    @media (orientation: portrait) {
-      height: 75%;
-    }
-  }
   .portrait\:w-\[80\%\] {
     @media (orientation: portrait) {
       width: 80%;
@@ -700,6 +704,7 @@
 html, body {
   overflow: auto;
   height: 100vh;
+  color: #FFFFFF;
 }
 input[type="text"], select, textarea {
   width: 100%;

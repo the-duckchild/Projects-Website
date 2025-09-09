@@ -1,9 +1,10 @@
 function navbarContextHighlight(){
-    const currentPathname = window.location.pathname
+    const currentPathname = window.location.href
     const navLinks = document.querySelectorAll(".navBarElement");
 
     navLinks.forEach(navLink =>{
-        if (navLink.href && navLink.href.includes(currentPathname)) {
+        navLink.classList.remove("textHighlight");
+        if (navLink.href === currentPathname) {
         navLink.classList.add("textHighlight");
     }
 });

@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
 
+
 html, body {
   overflow: auto;
-  height: 100vh;}
-
+  height: 100vh;
+  color: #FFFFFF
+}
 
 input[type="text"],
 select,
@@ -43,3 +45,4 @@ textarea {
 .textHighlight{
   color: #FFFF00
 }
+

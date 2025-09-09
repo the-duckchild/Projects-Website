@@ -7,15 +7,15 @@ class Navbar extends HTMLElement {
       class="hidden landscape:flex justify-center text-center sticky top-0 z-51 "
     >
       <nav id="navBar"
-        class="fixed flex font-mono justify-center align-center bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] drop-shadow-xl/25 text-[calc(1vh+1vw*0.50)] lg:text-[calc(1vh+1vw*0.8)] xl:text-lg m-[5vh] w-90% md:w-[60%] rounded-[25px] md:rounded-[50px] overflow-hidden"
+        class="fixed flex font-mono justify-center align-center bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#ffffff] drop-shadow-md  m-[5vh] w-90% md:w-[60%] rounded-[25px] md:rounded-[50px] overflow-hidden"
       >
         <ul
-          class="flex flex-row text-center p-0 overflow-hidden list-none m-[8px] text-base xl:text-xl"
+          class="flex flex-row text-center p-0 overflow-hidden list-none m-[8px] text-sm lg:text-base xl:text-xl"
         >
           <li id="homeLink"
             class="rounded-[50px] hover:bg-[rgba(244,116,59,0.6)] p-[0.5vw] text-center"
           >
-            <a href="/index.html" class="navBarElement block p=[0.1em] hover:text-[#086375]"
+            <a href="/" class="text-white navBarElement block p=[0.1em] hover:text-[#086375]"
               >Home</a
             >
           </li>

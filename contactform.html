@@ -27,10 +27,10 @@
     <main
       class="flex flex-col grow min-h-screen"
     >
-    <div class="container flex w-[40%] portrait:w-[80%] h-[60%] portrait:h-[75%]  font-mono  text-[#086375] drop-shadow-md">
-      <form method="post" id="form" autocomplete="on" netlify-honeypot="byeByeBots" data-netlify="true" data-netlify-recaptcha="true" class="grow">
+    <div class="container flex w-[40%] portrait:w-[80%] h-[75%] font-mono  text-[#086375] drop-shadow-md flex-nowrap">
+      <form method="post" id="form" autocomplete="on" netlify-honeypot="byeByeBots" data-netlify="true" data-netlify-recaptcha="true" class="grow flex flex-col flex-nowrap">
         
-        <div class="col-span-3 font-base xl:font-2xl"></div>
+        <div class="flex col-span-3 font-base xl:font-2xl"></div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name..." required class="border" class="text-[#086375]" autocomplete="on">
         <div class="col-span-3" ></div>
@@ -40,10 +40,10 @@
         
         <input type="hidden" name="access_key" value="2334f25b-3fca-4cc3-a6e0-b10fe4ea79e6">
         <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your Message..." class="h-[40%] portrait:h-[25%]" required></textarea>
+        <textarea id="message" name="message" placeholder="Your Message..." class="h-[30%] portrait:h-[40%]" required></textarea>
         <div data-netlify-recaptcha="true" class="mb-5"></div>
         <div id="result"></div>
-        <button type="submit" class="w-[8rem] p-[0.5rem] cursor-pointer bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#FFFFFF] drop-shadow-md hover:text-[#FFFF00] hover:font-bold rounded-[50px] object-contain ">Send</button>
+        <button type="submit" class="shrink w-[1] p-[1%] cursor-pointer bg-linear-to-r from-[#086375] to-[#78c3fb] text-[#FFFFFF] drop-shadow-md hover:text-[#FFFF00] hover:font-bold rounded-[50px] object-contain ">Send</button>
       </form>
         
     </div>
