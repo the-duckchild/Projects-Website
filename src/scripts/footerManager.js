@@ -2,7 +2,7 @@ class SocialFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<div class="flex justify-center items-center box-border">
     <footer id="footer-background"
-      class="bottom-0 mb-2 flex justify-center p-0 font-mono text-[#fe5f55] text-sm portait: w-[100%] landscape:w-[40%] z-52 rounded-xl"
+      class="bottom-0 mb-2 flex justify-center p-0 font-mono text-[#fe5f55] text-sm portait: w-[100%] landscape:w-[40%] z-52 rounded-xl box-border"
     >
 
     <!-- Bluesky Logo-->
