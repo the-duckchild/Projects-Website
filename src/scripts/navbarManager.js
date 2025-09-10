@@ -81,7 +81,7 @@ class Navbar extends HTMLElement {
 
       </aside>
 
-<div class="block top-0 w-[100%] fixed h-[9vh] bg-[#F2EDE1] z-50 "></div>`;
+<div class="block overflow-hidden top-0 w-[100%] fixed h-[9vh] bg-[#F2EDE1] z-3 "></div>`;
   }
 }
 

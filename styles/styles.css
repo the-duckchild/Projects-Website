@@ -3,6 +3,7 @@
 html,
 body {
   overflow: auto;
+  overflow:initial;
   height: 100vh;
   color: #ffffff;
 }
