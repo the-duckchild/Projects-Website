@@ -6,6 +6,8 @@ A portfolio site that showcases personal projects in music and electronics, desi
 
 Visit the site at: [https://simonduck.work/](https://simonduck.work/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/004e29a5-20a3-4ba3-af9c-4893b4214d53/deploy-status)](https://app.netlify.com/projects/simon-duck/deploys)
+
 ## Features
 
 - Portfolio of music and electronics projects
