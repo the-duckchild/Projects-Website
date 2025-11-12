@@ -1,15 +1,48 @@
-# Projects-Website
+# Projects Website
 
-Website showcasing personal projects in music and electronics.
+A portfolio site that showcases personal projects in music and electronics, designed and maintained by [Simon Duck](https://simonduck.work/).
 
-Deployed on Github Pages and can be accessed via this link: [https://example.com](https://example.com)
+## Live Website
 
-hosted at https://simonduck.work/
+Visit the site at: [https://simonduck.work/](https://simonduck.work/)
 
-## To run project locally follow these steps:
+## Features
 
-1.  **Git clone** `<repo url>`
-2.  Open with **live server**
+- Portfolio of music and electronics projects
+- Clean, responsive design
+- Easy-to-navigate layout
+- Built with static site generation for fast loading
 
+## Getting Started
 
+To run the project locally:
 
+1. **Clone the repository**
+
+    ```sh
+    git clone https://github.com/the-duckchild/Projects-Website.git
+    cd Projects-Website
+    ```
+
+2. **Open with Live Server**
+
+    If you have the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) installed in VS Code, right-click `index.html` and select **"Open with Live Server"**.
+
+    Alternatively, you can use any local HTTP server (such as Python's `http.server`):
+
+    ```sh
+    python3 -m http.server
+    ```
+
+    Then visit `http://localhost:8000` in your browser.
+
+## Contributing
+
+Pull requests are welcome! If you find a bug or have a suggestion, please [open an issue](https://github.com/the-duckchild/Projects-Website/issues) first to discuss your idea.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+Maintained by Simon Duck • [simonduck.work](https://simonduck.work/)
